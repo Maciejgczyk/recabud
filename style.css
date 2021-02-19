@@ -109,6 +109,10 @@ footer a {
 .menu {
     width: 100%;
     padding: 40px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 9999999;
 }
 
 .menu-wrap {
@@ -144,7 +148,7 @@ footer a {
 .background {
     width: 100%;
     height: 835px;
-    background-image: url(images/background.jpg);
+    background-image: url(images/bg1.png);
     background-repeat: no-repeat;
     position: relative;
     display: flex;
@@ -326,11 +330,105 @@ footer a {
     height: fit-content;
 }
 
+.hamburger {
+    display: none;
+    width: 38px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.hamburger-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999999999999999999;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    transition: .3s;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu-active {
+    top: 0;
+    transition: .3s;
+}
+
+.close-button {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.close-button .line:first-child {
+    transform: rotate(42deg);
+    position: relative;
+    top: 17px;
+}
+
+.close-button .line:last-child {
+    transform: rotate(-42deg);
+    position: relative;
+    bottom: 16px;
+}
+
+.hamburger-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-wrap a {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
 @media (max-width: 1279px) {
 
     .top-wrap,
     .menu-wrap {
         max-width: 992px;
+    }
+
+    .menu-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-wrap {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-logo {
+        position: static;
+        margin: 0;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+
+    .hamburger-menu {
+        display: flex;
     }
 }
 
@@ -359,5 +457,28 @@ footer a {
 
     .service>img {
         width: 100%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .top-wrap {
+        padding: 0px 0px 0px 36px;
+    }
+
+    .menu-wrap {
+        padding: 0px 36px;
+    }
+}
+
+@media (max-width: 780px) {
+    .block {
+        width: 100%;
+        max-width: 230px;
+        margin-top: 40px;
+    }
+
+    .blocks-wrap {
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
