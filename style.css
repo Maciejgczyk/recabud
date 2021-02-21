@@ -589,3 +589,11 @@ footer a {
         padding: 0px 0px 0px 10px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .service>img {
+        margin: 0 auto;
+        height: 320px;
+        width: 320px;
+    }
+}
