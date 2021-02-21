@@ -366,6 +366,7 @@ footer a {
 
 .service>img {
     width: 40%;
+    height: fit-content;
 }
 
 .hamburger {
