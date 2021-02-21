@@ -11,8 +11,8 @@ closeButton.addEventListener('click', () => {
     hamburgerSite.classList.toggle('hamburger-menu-active');
 })
 
-hamburgerLinks.addEventListener('click', (hamburgerLink) => {
-    hamburgerLinks.forEach(hamburgerLink => {
+hamburgerLinks.forEach(hamburgerLink => {
+    hamburgerLink.addEventListener('click', () => {
         hamburgerSite.classList.toggle('hamburger-menu-active');
-    });
-})
+    })
+});
