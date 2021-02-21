@@ -596,4 +596,8 @@ footer a {
         height: 320px;
         width: 320px;
     }
+
+    .about-wrap {
+        width: 85%;
+    }
 }
