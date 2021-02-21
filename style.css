@@ -325,6 +325,10 @@ footer a {
     margin-bottom: 20px;
 }
 
+.block>a {
+    text-align: center;
+}
+
 .service>img {
     width: 40%;
     height: fit-content;
@@ -397,6 +401,42 @@ footer a {
     padding: 20px 0px;
     text-align: center;
     font-size: 40px;
+}
+
+.location-wrap {
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.mapka {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.location {
+    width: 100%;
+    max-width: 1232px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    color: #1f2d30;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.location span {
+    font-size: 40px !important;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.location p {
+    margin-bottom: 32px;
+    font-weight: normal;
+    font-size: 16px;
 }
 
 @media (max-width: 1279px) {
