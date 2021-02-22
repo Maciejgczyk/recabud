@@ -500,6 +500,11 @@ footer a {
     font-size: 24px;
 }
 
+.tresc-wrap p img {
+    width: 100%;
+    margin-top: 34px;
+}
+
 @media (max-width: 1279px) {
 
     .top-wrap,
