@@ -489,6 +489,10 @@ footer a {
     color: #000;
 }
 
+.menu-logo>a>img {
+    max-width: 175px;
+}
+
 .tresc-wrap {
     width: 100%;
     max-width: 1232px;
